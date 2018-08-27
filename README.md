@@ -1,4 +1,4 @@
-GitLab Runner [![Build Status](https://api.travis-ci.org/riemers/ansible-gitlab-runner.svg?branch=master)](https://travis-ci.org/riemers/ansible-gitlab-runner) [![Ansible Role](https://img.shields.io/badge/role-riemers.gitlab--runner-blue.svg?maxAge=2592000)](https://galaxy.ansible.com/riemers/gitlab-runner/)
+GitLab Runner [![Build Status](https://api.travis-ci.org/SearchMyMind/ansible-role-gitlab-runner.svg?branch=master)](https://travis-ci.org/SearchMyMind/ansible-gitlab-runner) [![Ansible Role](https://img.shields.io/badge/role-riemers.gitlab--runner-blue.svg?maxAge=2592000)](https://galaxy.ansible.com/riemers/gitlab-runner/)
 =============
 
 This role will install the [official GitLab Runner](https://gitlab.com/gitlab-org/gitlab-runner)
@@ -13,7 +13,7 @@ Role Variables
 --------------
 
 `gitlab_runner_package_name`
-**Since Gitlab 10.x** The package name of `gitlab-ci-multi-runner` has been renamed to `gitlab-runner`. In order to install a version >= 10.x you will need to define this variable `gitlab_runner_package_name: gitlab-runner`.
+**Since Gitlab 10.x** The package name of `gitlab-ci-multi-runner` has been renamed to `gitlab-runner`.
 
 `gitlab_runner_concurrent`
 The maximum number of global jobs to run concurrently.
@@ -54,7 +54,7 @@ Variables to set s3 as a shared cache server. If set it requires variables liste
 `gitlab_runner_cache_s3_insecure`
 `gitlab_runner_cache_cache_shared`
 
-See the [config for more options](https://github.com/riemers/ansible-gitlab-runner/blob/master/tasks/register-runner.yml)
+See the [config for more options](https://github.com/SearchMyMind/ansible-role-gitlab-runner/blob/master/tasks/register-runner.yml)
 
 Example Playbook
 ----------------
@@ -64,7 +64,7 @@ Example Playbook
   vars_files:
     - vars/main.yml
   roles:
-    - { role: riemers.gitlab-runner }
+    - { role: searchmymind.gitlab-runner }
 ```
 
 Inside `vars/main.yml`
