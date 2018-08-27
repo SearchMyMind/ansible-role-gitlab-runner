@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Erik-jan Riemers
+  author: Sébastien Brousse
   description: GitLab Runner
   license: MIT
   min_ansible_version: 2.0
